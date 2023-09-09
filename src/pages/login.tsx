@@ -24,7 +24,7 @@ export default function Login() {
 
   return (
     <div className="flex h-screen">
-      <div className="w-1/2 py-8 px-[4.5rem]">
+      <div className="hidden lg:block w-1/2 py-8 px-[4.5rem]">
         <header>
           <a href="/">
             <img src="moneyIcon.svg" alt="logo" />
@@ -64,12 +64,12 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 bg-pink flex-col flex px-20 items-center justify-center">
+      <div className="w-full lg:w-1/2 bg-pink flex-col flex px-4 md:px-20 items-center justify-center">
         <form
           onSubmit={(e) => handleLogin(e)}
-          className="shadow-lg bg-white w-full rounded-xl py-8 px-14"
+          className="shadow-lg bg-white w-full rounded-xl py-8 px-8 md:px-14"
         >
-          <h2 className="text-xl font-semibold pb-1">Login to your dashboard</h2>
+          <h2 className="md:text-xl font-semibold pb-1">Login to your dashboard</h2>
           <p className="text-sm text-gray-100">Provide details to login to your account</p>
           <div className="my-8">
             <div className="mt-6">

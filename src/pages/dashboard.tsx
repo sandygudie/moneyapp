@@ -34,15 +34,15 @@ export default function Dashboard() {
         <ErrorMessage text={'Error loading page'} />
       ) : (
         <div>
-          <header className="border-b border-gray-200 px-14 pt-3">
+          <header className="border-b border-gray-200  px-4 px-14 pt-3">
             <a href="/">
               <img className="w-[70px]" src="moneyIcon.svg" alt="logo" />
             </a>
           </header>
-          <main className="flex mx-14 my-5 justify-between">
-            <div className="border-gray-200 border w-8/12 rounded-xl px-24 py-12">
+          <main className="flex  mx-4 lg:mx-14 my-5 justify-between">
+            <div className="border-gray-200 border w-full lg:w-8/12 rounded-xl p-8 lg:px-24 lg:py-12">
               <div className="flex gap-4 items-center">
-                <img className="w-16" src={companyLogo} alt="company-logo" />
+                <img className="w-12 lg:w-16" src={companyLogo} alt="company-logo" />
                 <p className="text-lg font-bold">{data.company.name}</p>
               </div>
               <div className="mt-12">
@@ -56,7 +56,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="bg-gray py-6 px-6 rounded-xl w-[30%]">
+            <div className="bg-gray py-6 px-6 rounded-xl hidden lg:block w-[30%]">
               <div className="">
                 <div className="my-12">
                   <span className="rounded-full flex items-center gap-1 w-fit text-sm py-2 font-medium px-4 bg-light-red text-red">
