@@ -7,7 +7,6 @@ import { LOGIN, DASHBOARD } from './utilis/routes'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 import { BASEURL } from './utilis/constants'
 
-
 const client = new ApolloClient({
   uri: BASEURL,
   cache: new InMemoryCache(),

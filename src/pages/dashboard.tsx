@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react'
 import { useQuery } from '@apollo/client'
+import logo from '../assets/moneyIcon.svg'
 import { COMPANY_QUERY } from '../utilis/api'
 import companyLogo from '../assets/companyLogo.svg'
 import starIcon from '../assets/star.svg'
@@ -34,9 +35,9 @@ export default function Dashboard() {
         <ErrorMessage text={'Error loading page'} />
       ) : (
         <div>
-          <header className="border-b border-gray-200  px-4 px-14 pt-3">
+          <header className="border-b border-gray-200  px-4 lg:px-14 pt-3">
             <a href="/">
-              <img className="w-16" src="moneyIcon.svg" alt="logo" />
+              <img className="w-[80px]" src={logo} alt="logo" />
             </a>
           </header>
           <main className="flex  mx-4 lg:mx-14 my-5 justify-between">

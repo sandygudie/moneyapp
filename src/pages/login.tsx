@@ -1,5 +1,6 @@
 import { useState, useContext, FormEvent, ChangeEvent } from 'react'
 import tickIcon from '../assets/tickCircleIcon.svg'
+import logo from '../assets/moneyIcon.svg'
 import { LoginContext } from '../context'
 import { EyeIcon, EyeSlashIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline'
 import { activities } from '../utilis/data'
@@ -27,7 +28,7 @@ export default function Login() {
       <div className="hidden lg:block w-1/2 py-8 px-[4.5rem]">
         <header>
           <a href="/">
-            <img src="moneyIcon.svg"  className="w-16" alt="logo" />
+            <img src={logo} className="w-16" alt="logo" />
           </a>
         </header>
         <div>
