@@ -5,10 +5,11 @@ import Dashboard from './pages/dashboard'
 import { AppProvider } from './context'
 import { LOGIN, DASHBOARD } from './utilis/routes'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
+import { BASEURL } from './utilis/constants'
 
-const baseUrl = import.meta.env.VITE_API_BASEURL
+
 const client = new ApolloClient({
-  uri: baseUrl,
+  uri: BASEURL,
   cache: new InMemoryCache(),
 })
 
