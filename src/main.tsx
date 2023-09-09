@@ -11,11 +11,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>
 )
 
-// todo÷
-// add eslint and husky
-// check other people work for how apollo client is sepatate, check the guys code
-// work on responsiveniess
-// fix the design
-// refactor icon
-// check that clickable icon are button
-// use effect
+

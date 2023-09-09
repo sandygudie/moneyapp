@@ -24,7 +24,7 @@ export default function Dashboard() {
     } else {
       navigate('/login')
     }
-  }, [handleLogout, isLoggedIn, navigate])
+  }, [])
 
   return (
     <>
