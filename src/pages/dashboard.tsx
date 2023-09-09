@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
 import { useQuery } from "@apollo/client"
-import logo from "../assets/moneyIcon.svg"
+import logo from "../assets/moneyIcon.webp"
 import { COMPANY_QUERY } from "../utilis/api"
 import companyLogo from "../assets/companyLogo.svg"
 import starIcon from "../assets/star.svg"

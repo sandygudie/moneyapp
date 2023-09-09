@@ -1,6 +1,6 @@
 import { useState, useContext, FormEvent, ChangeEvent } from "react"
 import tickIcon from "../assets/tickCircleIcon.svg"
-import logo from "../assets/moneyIcon.svg"
+import logo from "../assets/moneyIcon.webp"
 import { LoginContext } from "../context"
 import { EyeIcon, EyeSlashIcon, ExclamationCircleIcon } from "@heroicons/react/24/outline"
 import { activities } from "../utilis/data"
