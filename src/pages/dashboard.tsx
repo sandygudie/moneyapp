@@ -36,7 +36,7 @@ export default function Dashboard() {
         <div>
           <header className="border-b border-gray-200  px-4 px-14 pt-3">
             <a href="/">
-              <img className="w-[70px]" src="moneyIcon.svg" alt="logo" />
+              <img className="w-16" src="moneyIcon.svg" alt="logo" />
             </a>
           </header>
           <main className="flex  mx-4 lg:mx-14 my-5 justify-between">

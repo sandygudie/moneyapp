@@ -27,7 +27,7 @@ export default function Login() {
       <div className="hidden lg:block w-1/2 py-8 px-[4.5rem]">
         <header>
           <a href="/">
-            <img src="moneyIcon.svg" alt="logo" />
+            <img src="moneyIcon.svg"  className="w-16" alt="logo" />
           </a>
         </header>
         <div>
