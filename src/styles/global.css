@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+  }
+
+  input,
+  button {
+    font: inherit;
+  }
+}
+.spinner__animate {
+  border: 10px solid hsla(153, 75%, 44%, 1);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 100%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
