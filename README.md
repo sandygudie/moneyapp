@@ -3,7 +3,7 @@
 ### Installation
 1. Clone this repository into your local machine:
 ```
-git clone https://github.com/sandygudie/Kanban-App.git
+git clone https://github.com/sandygudie/moneyapp.git
 ```
 2. Install dependencies 
 ```
