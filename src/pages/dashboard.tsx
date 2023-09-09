@@ -1,16 +1,16 @@
-import { useContext, useEffect } from 'react'
-import { useQuery } from '@apollo/client'
-import logo from '../assets/moneyIcon.svg'
-import { COMPANY_QUERY } from '../utilis/api'
-import companyLogo from '../assets/companyLogo.svg'
-import starIcon from '../assets/star.svg'
-import cheerIcon from '../assets/cheer.svg'
-import blazeIcon from '../assets/blaze.svg'
-import timerIcon from '../assets/timer.svg'
-import Spinner from '../components/Spinner'
-import { LoginContext } from '../context'
-import { useNavigate } from 'react-router-dom'
-import ErrorMessage from '../components/ErrorMessage'
+import { useContext, useEffect } from "react"
+import { useQuery } from "@apollo/client"
+import logo from "../assets/moneyIcon.svg"
+import { COMPANY_QUERY } from "../utilis/api"
+import companyLogo from "../assets/companyLogo.svg"
+import starIcon from "../assets/star.svg"
+import cheerIcon from "../assets/cheer.svg"
+import blazeIcon from "../assets/blaze.svg"
+import timerIcon from "../assets/timer.svg"
+import Spinner from "../components/Spinner"
+import { LoginContext } from "../context"
+import { useNavigate } from "react-router-dom"
+import ErrorMessage from "../components/ErrorMessage"
 
 export default function Dashboard() {
   const navigate = useNavigate()
@@ -23,7 +23,7 @@ export default function Dashboard() {
         handleLogout()
       }, 120000)
     } else {
-      navigate('/login')
+      navigate("/login")
     }
   }, [])
 
@@ -32,7 +32,7 @@ export default function Dashboard() {
       {loading ? (
         <Spinner />
       ) : error ? (
-        <ErrorMessage text={'Error loading page'} />
+        <ErrorMessage text={"Error loading page"} />
       ) : (
         <div>
           <header className="border-b border-gray-200  px-4 lg:px-14 pt-3">
@@ -68,7 +68,7 @@ export default function Dashboard() {
                   {[cheerIcon, starIcon, blazeIcon].map((ele: string, index: number) => (
                     <div key={index} className="flex items-center gap-6 my-4">
                       <span className=" h-10 w-12 flex flex-col items-center justify-center bg-gray-300 rounded-lg">
-                        {' '}
+                        {" "}
                         <img src={ele} alt="icon" />
                       </span>
                       <div>

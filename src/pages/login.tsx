@@ -1,12 +1,12 @@
-import { useState, useContext, FormEvent, ChangeEvent } from 'react'
-import tickIcon from '../assets/tickCircleIcon.svg'
-import logo from '../assets/moneyIcon.svg'
-import { LoginContext } from '../context'
-import { EyeIcon, EyeSlashIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline'
-import { activities } from '../utilis/data'
+import { useState, useContext, FormEvent, ChangeEvent } from "react"
+import tickIcon from "../assets/tickCircleIcon.svg"
+import logo from "../assets/moneyIcon.svg"
+import { LoginContext } from "../context"
+import { EyeIcon, EyeSlashIcon, ExclamationCircleIcon } from "@heroicons/react/24/outline"
+import { activities } from "../utilis/data"
 export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(true)
   const { loginHandler, error } = useContext(LoginContext)
 
@@ -45,14 +45,14 @@ export default function Login() {
               <div
                 key={ele.id}
                 className={`${
-                  ele.id === 2 && 'rounded-xl bg-gray'
+                  ele.id === 2 && "rounded-xl bg-gray"
                 } flex items-center justify-between p-3 gap-4 mb-4`}
               >
                 <div className="flex items-center gap-6">
-                  {' '}
+                  {" "}
                   <img src={ele.icon} alt="icon" />
-                  <div className={`${ele.id === 2 ? `text-black` : 'text-gray-100'}`}>
-                    {' '}
+                  <div className={`${ele.id === 2 ? "text-black" : "text-gray-100"}`}>
+                    {" "}
                     <h2 className="gray-100 font-medium text-lg">{ele.title}</h2>
                     <p className="text-xs xl:w-[340px] leading-5 tracking-[0.04em]">
                       {ele.description}
@@ -80,7 +80,7 @@ export default function Login() {
               <input
                 onChange={emailChangehandler}
                 className={`${
-                  error && 'border-red'
+                  error && "border-red"
                 } rounded-md mt-2 border border-[1px] p-2.5 block w-full outline-4 outline-gray-600 outline`}
                 type="email"
                 value={email}
@@ -94,9 +94,9 @@ export default function Login() {
               <input
                 onChange={passwordChangehandler}
                 className={`${
-                  error && 'border-red'
+                  error && "border-red"
                 } rounded-md mt-2 border border-[1px] p-2.5 block w-full outline-4 outline-gray-600 outline`}
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword ? "text" : "password"}
                 value={password}
                 required
               />

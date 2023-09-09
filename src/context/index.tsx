@@ -1,6 +1,6 @@
-import { ReactNode, createContext, useState } from 'react'
-import { UserContextState } from '../types'
-import { useNavigate } from 'react-router-dom'
+import { ReactNode, createContext, useState } from "react"
+import { UserContextState } from "../types"
+import { useNavigate } from "react-router-dom"
 
 const initialState: UserContextState = {
   isLoggedIn: false,
@@ -17,18 +17,18 @@ export const AppProvider = ({ children }: { children: ReactNode }): JSX.Element 
   const [error, setError] = useState<string | null>(null)
 
   const loginHandler = (email: string, password: string) => {
-    if (email === 'admin@gmail.com' && password === 'admin') {
+    if (email === "admin@gmail.com" && password === "admin") {
       setLoggedIn(true)
-      navigate('/')
+      navigate("/")
     } else {
-      setError('Invalid email and password')
+      setError("Invalid email and password")
     }
   }
 
   const handleLogout = () => {
     setLoggedIn(false)
     setError(null)
-    navigate('/login')
+    navigate("/login")
   }
 
   return (
