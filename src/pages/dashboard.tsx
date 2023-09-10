@@ -35,12 +35,12 @@ export default function Dashboard() {
         <ErrorMessage text={"Error loading page"} />
       ) : (
         <div>
-          <header className="border-b border-gray-200  px-4 lg:px-14 pt-3">
+          <header className="border-b border-gray-200 px-4 lg:px-14 pt-3">
             <a href="/">
               <img className="w-[80px]" src={logo} alt="logo" />
             </a>
           </header>
-          <main className="flex  mx-4 lg:mx-14 my-5 justify-between">
+          <main className="flex mx-4 lg:mx-14 my-5 justify-between">
             <div className="border-gray-200 border w-full lg:w-8/12 rounded-xl p-8 lg:px-24 lg:py-12">
               <div className="flex gap-4 items-center">
                 <img className="w-12 lg:w-16" src={companyLogo} alt="company-logo" />
@@ -67,7 +67,7 @@ export default function Dashboard() {
                 <div className="rounded-lg bg-white border border-gray-500 my-5 py-1 px-5">
                   {[cheerIcon, starIcon, blazeIcon].map((ele: string, index: number) => (
                     <div key={index} className="flex items-center gap-6 my-4">
-                      <span className=" h-10 w-12 flex flex-col items-center justify-center bg-gray-300 rounded-lg">
+                      <span className="h-10 w-12 flex flex-col items-center justify-center bg-gray-300 rounded-lg">
                         {" "}
                         <img src={ele} alt="icon" />
                       </span>

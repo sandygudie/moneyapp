@@ -4,6 +4,7 @@ import logo from "../assets/moneyIcon.webp"
 import { LoginContext } from "../context"
 import { EyeIcon, EyeSlashIcon, ExclamationCircleIcon } from "@heroicons/react/24/outline"
 import { activities } from "../utilis/data"
+
 export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
