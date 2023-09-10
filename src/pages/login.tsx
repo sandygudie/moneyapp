@@ -29,7 +29,7 @@ export default function Login() {
       <div className="hidden lg:block w-1/2 py-8 px-[4.5rem]">
         <header>
           <a href="/">
-            <img src={logo} className="w-16" alt="logo" />
+            <img src={logo} className="w-20" alt="logo" />
           </a>
         </header>
         <div>
@@ -47,7 +47,7 @@ export default function Login() {
                 key={ele.id}
                 className={`${
                   ele.id === 2 && "rounded-xl bg-gray"
-                } flex items-center justify-between p-3 gap-4 mb-4`}
+                } flex items-center justify-between py-3 gap-4 mb-4`}
               >
                 <div className="flex items-center gap-6">
                   {" "}
