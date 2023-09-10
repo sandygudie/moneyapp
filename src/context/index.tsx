@@ -1,15 +1,15 @@
 import { ReactNode, createContext, useState } from "react"
-import { UserContextState } from "../types"
+import { LoginContextState } from "../types"
 import { useNavigate } from "react-router-dom"
 
-const initialState: UserContextState = {
+const initialState: LoginContextState = {
   isLoggedIn: false,
   loginHandler: () => {},
   error: null,
   handleLogout: () => {},
 }
 
-export const LoginContext = createContext<UserContextState>(initialState)
+export const LoginContext = createContext<LoginContextState>(initialState)
 
 export const AppProvider = ({ children }: { children: ReactNode }): JSX.Element => {
   const navigate = useNavigate()
