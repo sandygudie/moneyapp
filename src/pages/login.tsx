@@ -55,7 +55,7 @@ export default function Login() {
                   <div className={`${ele.id === 2 ? "text-black" : "text-gray-100"}`}>
                     {" "}
                     <h2 className="gray-100 font-medium text-lg">{ele.title}</h2>
-                    <p className="text-xs xl:w-[340px] leading-5 tracking-[0.04em]">
+                    <p className="text-xs xl:w-[320px] leading-5 tracking-[0.04em]">
                       {ele.description}
                     </p>
                   </div>
