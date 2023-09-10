@@ -11,6 +11,7 @@
 Vite(Reactjs),
 Typescript,
 Tailwind,
+Apollo client,
 Eslint,
 Prettier,
 <br/>
