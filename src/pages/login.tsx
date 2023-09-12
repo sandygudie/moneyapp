@@ -106,7 +106,7 @@ export default function Login() {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-5 top-11"
               >
-                {!showPassword ? <EyeIcon className="w-5" /> : <EyeSlashIcon className="w-5" />}
+                {showPassword ? <EyeIcon className="w-5" /> : <EyeSlashIcon className="w-5" />}
               </button>
             </div>
           </div>
