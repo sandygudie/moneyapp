@@ -1,6 +1,23 @@
 # Money App
+<br/>
 
-### Installation
+
+## Deployment
+[https://money-app.netlify.app/](https://money-app.netlify.app/)
+<br/>
+
+
+## Technologies
+Vite(Reactjs),
+Typescript,
+Tailwind,
+Apollo client,
+Eslint,
+Prettier,
+<br/>
+
+
+## Installation
 
 1. Clone this repository into your local machine:
 
@@ -18,4 +35,11 @@ yarn install
 
 ```
 yarn run dev
+```
+
+4. Login credentials
+   
+```
+Email    : admin@gmail.com
+password : admin
 ```
