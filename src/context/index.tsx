@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom"
 const initialState: LoginContextState = {
   isLoggedIn: false,
   loginHandler: () => {},
+  handleLoginError: () => {},
   error: null,
   handleLogout: () => {},
 }
@@ -25,6 +26,10 @@ export const AppProvider = ({ children }: { children: ReactNode }): JSX.Element 
     }
   }
 
+  const handleLoginError = () => {
+    setError(null)
+  }
+
   const handleLogout = () => {
     setLoggedIn(false)
     setError(null)
@@ -32,7 +37,9 @@ export const AppProvider = ({ children }: { children: ReactNode }): JSX.Element 
   }
 
   return (
-    <LoginContext.Provider value={{ isLoggedIn, loginHandler, error, handleLogout }}>
+    <LoginContext.Provider
+      value={{ isLoggedIn, handleLoginError, loginHandler, error, handleLogout }}
+    >
       {children}
     </LoginContext.Provider>
   )
