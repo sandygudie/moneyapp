@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react"
+import { useContext} from "react"
 import { useQuery } from "@apollo/client"
 import logo from "../assets/moneyIcon.webp"
 import { COMPANY_QUERY } from "../utilis/api"
@@ -14,18 +14,12 @@ import ErrorMessage from "../components/ErrorMessage"
 
 export default function Dashboard() {
   const navigate = useNavigate()
-  const { isLoggedIn, handleLogout } = useContext(LoginContext)
+  const { isLoggedIn } = useContext(LoginContext)
   const { data, loading, error } = useQuery(COMPANY_QUERY)
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      setTimeout(() => {
-        handleLogout()
-      }, 120000)
-    } else {
-      navigate("/login")
-    }
-  }, [])
+ if(!isLoggedIn){
+ navigate("/login")
+ }
 
   return (
     <>
