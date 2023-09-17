@@ -1,4 +1,4 @@
-import { useContext} from "react"
+import { useContext } from "react"
 import { useQuery } from "@apollo/client"
 import logo from "../assets/moneyIcon.webp"
 import { COMPANY_QUERY } from "../utilis/api"
@@ -17,9 +17,9 @@ export default function Dashboard() {
   const { isLoggedIn } = useContext(LoginContext)
   const { data, loading, error } = useQuery(COMPANY_QUERY)
 
- if(!isLoggedIn){
- navigate("/login")
- }
+  if (!isLoggedIn) {
+    navigate("/login")
+  }
 
   return (
     <>

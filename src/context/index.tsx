@@ -34,9 +34,9 @@ export const AppProvider = ({ children }: { children: ReactNode }): JSX.Element 
     if (isLoggedIn) {
       setTimeout(() => {
         setLoggedIn(false)
-    setError(null)
-    navigate("/login")
-      }, 120000)
+        setError(null)
+        navigate("/login")
+      }, 20000)
     }
   }
 
