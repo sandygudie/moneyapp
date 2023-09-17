@@ -9,7 +9,7 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(true)
-  const { loginHandler, handleLoginError,error } = useContext(LoginContext)
+  const { loginHandler, handleLoginError, error } = useContext(LoginContext)
 
   const emailChangehandler = (event: ChangeEvent<HTMLInputElement>) => {
     handleLoginError()
@@ -28,10 +28,10 @@ export default function Login() {
 
   return (
     <div className="flex h-screen">
-      <div className="hidden lg:block w-1/2 py-8 px-[4.5rem]">
+      <div className="hidden lg:block w-1/2 py-8 lg: px-8 xl:px-[4.5rem]">
         <header>
           <a href="/">
-            <img src={logo} className="w-20" alt="logo" />
+            <img src={logo} className="w-20 h-auto" alt="logo" />
           </a>
         </header>
         <div>
@@ -49,11 +49,11 @@ export default function Login() {
                 key={ele.id}
                 className={`${
                   ele.id === 2 && "rounded-xl bg-gray"
-                } flex items-center justify-between py-3 gap-4 mb-4`}
+                } flex 2xl:w-[40em] items-center justify-between p-3 gap-4 mb-4`}
               >
                 <div className="flex items-center gap-6">
                   {" "}
-                  <img src={ele.icon} alt="icon" />
+                  <img src={ele.icon} alt="icon" className="w-20 h-auto" />
                   <div className={`${ele.id === 2 ? "text-black" : "text-gray-100"}`}>
                     {" "}
                     <h2 className="gray-100 font-medium text-lg">{ele.title}</h2>
@@ -68,10 +68,10 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-pink flex-col flex px-4 md:px-20 items-center justify-center">
+      <div className="w-full lg:w-1/2 bg-pink flex-col flex px-4 md:px-20 lg:px-14 xl:px-20 items-center justify-center">
         <form
           onSubmit={(e) => handleLogin(e)}
-          className="shadow-lg bg-white w-full relative rounded-xl py-8 px-8 md:px-14"
+          className="shadow-lg bg-white w-full xl:w-[30em] relative rounded-xl py-8 px-8 md:px-14"
         >
           <h2 className="md:text-xl font-semibold pb-1">Login to your dashboard</h2>
           <p className="text-sm text-gray-100">Provide details to login to your account</p>
@@ -107,7 +107,8 @@ export default function Login() {
               />
               <button
                 type="button"
-                aria-labelledby="icon"
+                aria-labelledby="password-toogle"
+                id="password-button"
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-5 top-11"
               >
@@ -127,7 +128,6 @@ export default function Login() {
           >
             Login
           </button>
-         
         </form>
       </div>
     </div>
