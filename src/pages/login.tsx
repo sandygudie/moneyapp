@@ -88,6 +88,7 @@ export default function Login() {
                 type="email"
                 value={email}
                 required
+                id="email"
               />
             </div>
             <div className="mt-6 mb-12 relative">
@@ -101,10 +102,12 @@ export default function Login() {
                 } rounded-md mt-2 border border-[1px] p-2.5 block w-full outline-4 outline-gray-600 outline`}
                 type={showPassword ? "text" : "password"}
                 value={password}
+                id="password"
                 required
               />
               <button
                 type="button"
+                aria-labelledby="icon"
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-5 top-11"
               >
